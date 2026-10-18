@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad de FollowMe</title>
+<style>
+:root { --bg:#fff; --fg:#1d1d1f; --muted:#6e6e73; --line:#e5e5ea; --accent:#0a66d8; --card:#f5f5f7; }
+@media (prefers-color-scheme: dark) { :root { --bg:#000; --fg:#f5f5f7; --muted:#a1a1a6; --line:#2c2c2e; --accent:#4c9dff; --card:#1c1c1e; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+main { max-width:760px; margin:0 auto; padding:40px 16px 64px; }
+header { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:24px; }
+.brand { display:flex; align-items:center; gap:10px; font-weight:700; font-size:20px; }
+.logo { width:36px; height:36px; border-radius:9px; background:linear-gradient(135deg,#1e88e5,#3949ab); display:grid; place-items:center; color:#fff; font-size:18px; }
+nav a { color:var(--accent); text-decoration:none; font-size:14px; }
+h1 { font-size:30px; line-height:1.2; margin:0 0 4px; }
+h2 { font-size:20px; margin:32px 0 8px; }
+p, li { color:var(--fg); }
+em { color:var(--muted); }
+a { color:var(--accent); }
+code { background:var(--card); padding:1px 5px; border-radius:5px; font-size:14px; }
+.table { overflow-x:auto; }
+table { border-collapse:collapse; width:100%; font-size:15px; }
+th, td { text-align:left; vertical-align:top; padding:10px; border-bottom:1px solid var(--line); }
+th { color:var(--muted); font-weight:600; }
+footer { margin-top:48px; color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+<main>
+<header><div class="brand"><div class="logo">🚗</div>FollowMe</div><nav><a href="../" lang="en">English</a></nav></header>
+<h1>Política de privacidad de FollowMe</h1>
+<p><em>Última actualización: 18 de octubre de 2026</em></p>
+<p>FollowMe es una aplicación para viajar en caravana: el coche que va delante (el líder) comparte el camino que hace, y el resto de coches reciben indicaciones para seguirlo. Esta política explica qué datos usa la aplicación y para qué.</p>
+<h2>Responsable</h2>
+<p>Alex Rodríguez Muñoz · <a href="mailto:followmeconvoy@gmail.com">followmeconvoy@gmail.com</a></p>
+<h2>Qué datos se tratan</h2>
+<div class=table><table><thead><tr><th>Dato</th><th>Para qué</th><th>Cuándo</th></tr></thead><tbody>
+<tr><td><strong>Ubicación precisa</strong> (posición, rumbo, velocidad)</td><td>Mostrar tu coche a los miembros de tu caravana, grabar el camino del líder y calcular tu ruta</td><td>Solo mientras estás dentro de una caravana, también con la pantalla apagada (iOS muestra un indicador azul y Android una notificación)</td></tr>
+<tr><td><strong>Nombre que eliges</strong></td><td>Que los demás miembros sepan quién es cada coche</td><td>Mientras estás en la caravana</td></tr>
+<tr><td><strong>Identificador anónimo</strong></td><td>Saber qué coche eres dentro de la caravana sin pedirte una cuenta</td><td>Se crea al usar la app por primera vez</td></tr>
+<tr><td><strong>Avisos que envías</strong> (tipo, lugar y hora)</td><td>Avisar a otros conductores de controles, accidentes u obstáculos</td><td>Solo cuando envías uno; caducan a las 1–2 horas</td></tr>
+</tbody></table></div>
+<p>No pedimos correo, teléfono ni contraseña. No usamos tus datos para publicidad ni para rastrearte entre apps o sitios web.</p>
+<h2>Con quién se comparten</h2>
+<ul>
+<li><strong>Con los miembros de tu caravana.</strong> Ven tu nombre y tu posición, y solo pueden unirse quienes tienen el código de la caravana.</li>
+<li><strong>Google Firebase</strong>, que guarda los datos de la caravana en servidores de la Unión Europea (Bélgica, <code>europe-west1</code>) y gestiona el identificador anónimo.</li>
+<li><strong>Otros conductores que usan FollowMe</strong>, solo si envías un aviso (control policial, accidente u obstáculo). Ven el tipo de aviso y el lugar durante 1–2 horas, nunca quién lo envió. Los avisos se borran al caducar.</li>
+<li><strong>OpenFreeMap</strong>, que sirve las imágenes del mapa. Recibe la zona del mapa que estás mirando, no tu posición exacta ni quién eres.</li>
+<li><strong>openrouteservice</strong> (HeiGIT, Alemania), solo cuando pides una ruta directa o volver al camino del líder. Recibe tu posición y el destino para calcular la ruta.</li>
+<li><strong>Mapbox</strong>, solo cuando usas FollowMe en CarPlay o Android Auto. Recibe tu posición y la del líder para mostrar el mapa y calcular la ruta en la pantalla del coche.</li>
+<li><strong>El servicio de mapas de tu móvil</strong> (Apple o Google), solo para saber en qué país estás, de modo que los avisos de radares solo se den donde son legales.</li>
+</ul>
+<h2>Cuánto tiempo se conservan</h2>
+<ul>
+<li><strong>Datos de la caravana</strong> (posiciones, camino del líder, nombres):<ul><li>Se borran <strong>en el momento en que sale el último miembro</strong>.</li><li>Si una caravana se abandona sin cerrarla, <strong>caduca a las 24 horas</strong> de crearse y se borra automáticamente en cuanto cualquier usuario vuelve a usar la app.</li></ul></li>
+<li><strong>Avisos</strong>: se borran al caducar, 1–2 horas después de enviarse.</li>
+<li><strong>Identificador anónimo</strong>: se borra automáticamente tras <strong>30 días</strong> sin uso.</li>
+</ul>
+<p>La ubicación de los radares viene de OpenStreetMap (© OpenStreetMap contributors, ODbL) y va guardada dentro de la app: no se envía ningún dato para consultarla.</p>
+<h2>Tus derechos</h2>
+<p>Puedes salir de una caravana en cualquier momento, y tu posición deja de compartirse al instante. Para ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación o portabilidad, escribe a <a href="mailto:followmeconvoy@gmail.com.">followmeconvoy@gmail.com.</a> También puedes reclamar ante la autoridad de protección de datos de tu país; en España es la Agencia Española de Protección de Datos (<a href="https://www.aepd.es">aepd.es</a>).</p>
+<h2>Menores</h2>
+<p>FollowMe no está dirigida a menores de 14 años.</p>
+<h2>Cambios</h2>
+<p>Si cambia esta política, actualizaremos la fecha de arriba y lo indicaremos en la app.</p>
+<footer>FollowMe · <a href="mailto:followmeconvoy@gmail.com">followmeconvoy@gmail.com</a></footer>
+</main>
+</body>
+</html>
