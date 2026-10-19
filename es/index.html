@@ -40,6 +40,7 @@ footer { margin-top:48px; color:var(--muted); font-size:13px; }
 <tr><td><strong>Ubicación precisa</strong> (posición, rumbo, velocidad)</td><td>Mostrar tu coche a los miembros de tu caravana, grabar el camino del líder y calcular tu ruta</td><td>Solo mientras estás dentro de una caravana, también con la pantalla apagada (iOS muestra un indicador azul y Android una notificación)</td></tr>
 <tr><td><strong>Nombre que eliges</strong></td><td>Que los demás miembros sepan quién es cada coche</td><td>Mientras estás en la caravana</td></tr>
 <tr><td><strong>Identificador anónimo</strong></td><td>Saber qué coche eres dentro de la caravana sin pedirte una cuenta</td><td>Se crea al usar la app por primera vez</td></tr>
+<tr><td><strong>Destino, paradas y ruta</strong> que eliges o importas (archivo GPX)</td><td>Guiar a la caravana hasta allí y saber quién va más cerca del destino</td><td>Mientras estás en la caravana; se borran con ella</td></tr>
 <tr><td><strong>Avisos que envías</strong> (tipo, lugar y hora)</td><td>Avisar a otros conductores de controles, accidentes u obstáculos</td><td>Solo cuando envías uno; caducan a las 1–2 horas</td></tr>
 <tr><td><strong>Informes de cierre</strong> (qué hacía la app cuando se cerró de forma inesperada, modelo del dispositivo y versión del sistema)</td><td>Encontrar y corregir errores</td><td>Solo cuando la app se cierra por un fallo; no se vinculan a tu nombre</td></tr>
 </tbody></table></div>
@@ -50,9 +51,10 @@ footer { margin-top:48px; color:var(--muted); font-size:13px; }
 <li><strong>Google Firebase</strong>, que guarda los datos de la caravana en servidores de la Unión Europea (Bélgica, <code>europe-west1</code>), gestiona el identificador anónimo y recibe los informes de cierre (Firebase Crashlytics).</li>
 <li><strong>Otros conductores que usan FollowMe</strong>, solo si envías un aviso (control policial, accidente u obstáculo). Ven el tipo de aviso y el lugar durante 1–2 horas, nunca quién lo envió. Los avisos se borran al caducar.</li>
 <li><strong>OpenFreeMap</strong>, que sirve las imágenes del mapa. Recibe la zona del mapa que estás mirando, no tu posición exacta ni quién eres.</li>
-<li><strong>openrouteservice</strong> (HeiGIT, Alemania), solo cuando pides una ruta directa o volver al camino del líder. Recibe tu posición y el destino para calcular la ruta.</li>
-<li><strong>Mapbox</strong>, solo cuando usas FollowMe en CarPlay o Android Auto. Recibe tu posición y la del líder para mostrar el mapa y calcular la ruta en la pantalla del coche.</li>
-<li><strong>El servicio de mapas de tu móvil</strong> (Apple o Google), solo para saber en qué país estás, de modo que los avisos de radares solo se den donde son legales.</li>
+<li><strong>openrouteservice</strong> (HeiGIT, Alemania), solo cuando pides una ruta directa, volver al camino del líder o ir al destino. Recibe tu posición y los puntos a los que vas para calcular la ruta.</li>
+<li><strong>El buscador de sitios</strong>, solo cuando buscas un destino: en iPhone, el de Apple; en Android, Photon (komoot, Alemania), un buscador gratuito de OpenStreetMap. Reciben el texto que escribes y tu posición aproximada, para dar primero los resultados cercanos.</li>
+<li><strong>Google</strong>, solo si pegas un enlace corto de Google Maps (maps.app.goo.gl): la app lo abre para leer la ubicación que contiene.</li>
+<li><strong>El servicio de mapas de tu móvil</strong> (Apple o Google), para saber en qué país estás (los avisos de radares solo se dan donde son legales) y para poner nombre a un punto que eliges en el mapa.</li>
 </ul>
 <h2>Cuánto tiempo se conservan</h2>
 <ul>
