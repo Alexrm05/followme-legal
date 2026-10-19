@@ -31,7 +31,7 @@ footer { margin-top:48px; color:var(--muted); font-size:13px; }
 <main>
 <header><div class="brand"><div class="logo">🚗</div>FollowMe</div><nav><a href="https://alexrm05.github.io/followme-legal/es/" lang="es">Español</a></nav></header>
 <h1>FollowMe Privacy Policy</h1>
-<p><em>Last updated: October 18, 2026</em></p>
+<p><em>Last updated: October 19, 2026</em></p>
 <p>FollowMe is an app for driving in a convoy: the car in front (the leader) shares the route it takes, and the other cars get directions to follow it. This policy explains what data the app uses and why.</p>
 <h2>Controller</h2>
 <p>Alex Rodríguez Muñoz · <a href="mailto:followmeconvoy@gmail.com">followmeconvoy@gmail.com</a></p>
@@ -41,12 +41,13 @@ footer { margin-top:48px; color:var(--muted); font-size:13px; }
 <tr><td><strong>The name you choose</strong></td><td>Let the other members know who each car is</td><td>While you are in the convoy</td></tr>
 <tr><td><strong>Anonymous identifier</strong></td><td>Know which car you are within the convoy without asking you for an account</td><td>Created the first time you use the app</td></tr>
 <tr><td><strong>Road reports you send</strong> (type, place, time)</td><td>Warn other drivers about police checks, accidents or hazards ahead</td><td>Only when you send one; they expire after 1–2 hours</td></tr>
+<tr><td><strong>Crash reports</strong> (what the app was doing when it closed unexpectedly, device model and system version)</td><td>Find and fix bugs</td><td>Only when the app crashes; not linked to your name</td></tr>
 </tbody></table></div>
 <p>We do not ask for your email, phone number or a password. We do not use your data for advertising or to track you across apps or websites.</p>
 <h2>Who it is shared with</h2>
 <ul>
 <li><strong>The members of your convoy.</strong> They see your name and position. Only people who have the convoy code can join.</li>
-<li><strong>Google Firebase</strong>, which stores convoy data on servers in the European Union (Belgium, <code>europe-west1</code>) and manages the anonymous identifier.</li>
+<li><strong>Google Firebase</strong>, which stores convoy data on servers in the European Union (Belgium, <code>europe-west1</code>), manages the anonymous identifier and receives crash reports (Firebase Crashlytics).</li>
 <li><strong>Other drivers using FollowMe</strong>, only if you send a road report (police check, accident or hazard): they see its type and place for 1–2 hours, never who sent it. Reports are deleted when they expire.</li>
 <li><strong>OpenFreeMap</strong>, which serves the map images. It receives the area of the map you are looking at, not your exact position or who you are.</li>
 <li><strong>openrouteservice</strong> (HeiGIT, Germany), only when you ask for a direct route or to be taken back to the leader's route: it receives your position and the destination to calculate the route.</li>
@@ -58,6 +59,7 @@ footer { margin-top:48px; color:var(--muted); font-size:13px; }
 <li><strong>Convoy data</strong> (positions, the leader's route, names):<ul><li>Deleted <strong>as soon as the last member leaves</strong>.</li><li>If a convoy is abandoned without being closed, it <strong>expires 24 hours</strong> after it was created and is deleted automatically the next time any user opens the app.</li></ul></li>
 <li><strong>Road reports</strong>: deleted when they expire (1–2 hours after being sent).</li>
 <li><strong>Anonymous identifier</strong>: deleted automatically after <strong>30 days</strong> without use.</li>
+<li><strong>Crash reports</strong>: kept by Firebase Crashlytics for up to 90 days.</li>
 </ul>
 <p>Speed camera locations come from OpenStreetMap (© OpenStreetMap contributors, ODbL) and are stored in the app itself: no data is sent to look them up.</p>
 <h2>Your rights</h2>
