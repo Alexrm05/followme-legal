@@ -31,7 +31,7 @@ footer { margin-top:48px; color:var(--muted); font-size:13px; }
 <main>
 <header><div class="brand"><div class="logo">🚗</div>FollowMe</div><nav><a href="https://alexrm05.github.io/followme-legal/" lang="en">English</a></nav></header>
 <h1>Política de privacidad de FollowMe</h1>
-<p><em>Última actualización: 19 de octubre de 2026</em></p>
+<p><em>Última actualización: 26 de octubre de 2026</em></p>
 <p>FollowMe es una aplicación para viajar en caravana: el coche que va delante (el líder) comparte el camino que hace, y el resto de coches reciben indicaciones para seguirlo. Esta política explica qué datos usa la aplicación y para qué.</p>
 <h2>Responsable</h2>
 <p>Alex Rodríguez Muñoz · <a href="mailto:followmeconvoy@gmail.com">followmeconvoy@gmail.com</a></p>
@@ -39,18 +39,24 @@ footer { margin-top:48px; color:var(--muted); font-size:13px; }
 <div class=table><table><thead><tr><th>Dato</th><th>Para qué</th><th>Cuándo</th></tr></thead><tbody>
 <tr><td><strong>Ubicación precisa</strong> (posición, rumbo, velocidad)</td><td>Mostrar tu coche a los miembros de tu caravana, grabar el camino del líder y calcular tu ruta</td><td>Solo mientras estás dentro de una caravana, también con la pantalla apagada (iOS muestra un indicador azul y Android una notificación)</td></tr>
 <tr><td><strong>Nombre que eliges</strong></td><td>Que los demás miembros sepan quién es cada coche</td><td>Mientras estás en la caravana</td></tr>
+<tr><td><strong>Foto de perfil e icono del vehículo</strong> (opcionales; la foto se reduce a una miniatura de 80 × 80 píxeles)</td><td>Que los miembros de tu caravana te reconozcan en el mapa</td><td>Se guardan en tu móvil y, mientras estás en una caravana, también en ella</td></tr>
+<tr><td><strong>Caravanas cercanas</strong> (opcional, apagado de serie): tu color, icono del vehículo, posición y rumbo (nunca tu nombre)</td><td>Que los coches de otras caravanas que estén a pocos kilómetros vean el tuyo, y tú los suyos</td><td>Solo mientras lo tienes activado en los ajustes y estás en una caravana</td></tr>
 <tr><td><strong>Identificador anónimo</strong></td><td>Saber qué coche eres dentro de la caravana sin pedirte una cuenta</td><td>Se crea al usar la app por primera vez</td></tr>
 <tr><td><strong>Destino, paradas y ruta</strong> que eliges o importas (archivo GPX)</td><td>Guiar a la caravana hasta allí y saber quién va más cerca del destino</td><td>Mientras estás en la caravana; se borran con ella</td></tr>
 <tr><td><strong>Mensajes rápidos y avisos de emergencia</strong> que envías (con tu posición, en el caso de una emergencia)</td><td>Avisar a los miembros de tu caravana</td><td>Mientras estás en la caravana; se borran con ella</td></tr>
-<tr><td><strong>Avisos que envías</strong> (tipo, lugar y hora)</td><td>Avisar a otros conductores de controles, accidentes u obstáculos</td><td>Solo cuando envías uno; caducan a las 1–2 horas</td></tr>
+<tr><td><strong>Avisos que envías</strong> (tipo, lugar y hora)</td><td>Avisar a otros conductores de controles, accidentes, obstáculos o retenciones</td><td>Solo cuando envías uno; caducan a las 1–2 horas</td></tr>
+<tr><td><strong>Puntos por tus avisos</strong> (qué aviso y el identificador anónimo de quien lo confirmó)</td><td>Sumarte un punto cada vez que otro conductor confirma uno de tus avisos</td><td>Cuando alguien confirma uno; duran un año</td></tr>
 <tr><td><strong>Informes de cierre</strong> (qué hacía la app cuando se cerró de forma inesperada, modelo del dispositivo y versión del sistema)</td><td>Encontrar y corregir errores</td><td>Solo cuando la app se cierra por un fallo; no se vinculan a tu nombre</td></tr>
+<tr><td><strong>Totales de uso</strong> (cuántas caravanas se crean, cuántas veces alguien se une a una y cuántas llegan al destino, por día y por sistema: iOS o Android)</td><td>Saber si la app se usa y mejorarla</td><td>Se suma 1 al total del día; no se guarda quién, ni dónde, ni ningún identificador</td></tr>
 </tbody></table></div>
 <p>No pedimos correo, teléfono ni contraseña. No usamos tus datos para publicidad ni para rastrearte entre apps o sitios web.</p>
 <h2>Con quién se comparten</h2>
 <ul>
-<li><strong>Con los miembros de tu caravana.</strong> Ven tu nombre y tu posición, y solo pueden unirse quienes tienen el código de la caravana.</li>
+<li><strong>Con los miembros de tu caravana.</strong> Ven tu nombre, tu posición y, si los has puesto, tu foto y el icono de tu vehículo. Solo pueden unirse quienes tienen el código de la caravana.</li>
+<li><strong>Con conductores de otras caravanas cercanas</strong>, solo si activas «Ver y que me vean otras caravanas cerca» en los ajustes (está apagado de serie).<ul><li>Quienes también lo tienen activado y están dentro de la distancia que eligen (2 a 20 km) ven en su mapa tu color, el icono de tu vehículo y tu posición.</li><li>No ven tu nombre, tu foto, tu caravana ni a dónde vas.</li><li>Estos datos se guardan por zonas de unos 10 km en Firebase, donde cualquier app de FollowMe puede leerlos.</li></ul></li>
 <li><strong>Google Firebase</strong>, que guarda los datos de la caravana en servidores de la Unión Europea (Bélgica, <code>europe-west1</code>), gestiona el identificador anónimo y recibe los informes de cierre (Firebase Crashlytics).</li>
-<li><strong>Otros conductores que usan FollowMe</strong>, solo si envías un aviso (control policial, accidente u obstáculo). Ven el tipo de aviso y el lugar durante 1–2 horas, nunca quién lo envió. Los avisos se borran al caducar.</li>
+<li><strong>Otros conductores que usan FollowMe</strong>, solo si envías un aviso (control policial, accidente, obstáculo o retención). Ven el tipo de aviso y el lugar durante 1–2 horas, nunca quién lo envió. Los avisos se borran al caducar.</li>
+<li><strong>La DGT (Dirección General de Tráfico)</strong>, solo en España: cada 5 minutos la app descarga su lista pública de incidencias (retenciones, accidentes, obstáculos). La petición no lleva tu posición ni quién eres; la app elige después las que tienes cerca.</li>
 <li><strong>OpenFreeMap</strong>, que sirve las imágenes del mapa. Recibe la zona del mapa que estás mirando, no tu posición exacta ni quién eres.</li>
 <li><strong>openrouteservice</strong> (HeiGIT, Alemania), solo cuando pides una ruta directa, volver al camino del líder o ir al destino. Recibe tu posición y los puntos a los que vas para calcular la ruta.</li>
 <li><strong>El buscador de sitios</strong>, solo cuando buscas un destino: en iPhone, el de Apple; en Android, Photon (komoot, Alemania), un buscador gratuito de OpenStreetMap. Reciben el texto que escribes y tu posición aproximada, para dar primero los resultados cercanos.</li>
@@ -61,12 +67,16 @@ footer { margin-top:48px; color:var(--muted); font-size:13px; }
 <ul>
 <li><strong>Datos de la caravana</strong> (posiciones, camino del líder, nombres):<ul><li>Se borran <strong>en el momento en que sale el último miembro</strong>.</li><li>Si una caravana se abandona sin cerrarla, <strong>caduca a las 24 horas</strong> de crearse y se borra automáticamente en cuanto cualquier usuario vuelve a usar la app.</li></ul></li>
 <li><strong>Avisos</strong>: se borran al caducar, 1–2 horas después de enviarse.</li>
+<li><strong>Puntos por avisos confirmados</strong>: cada punto guarda qué aviso fue y el identificador anónimo de quien lo confirmó, nunca su nombre ni su posición. Solo los ves tú y duran <strong>un año</strong>.</li>
+<li><strong>Foto de perfil e icono del vehículo</strong>:<ul><li>En la caravana, se borran con ella o en cuanto los quitas en los ajustes.</li><li>En tu móvil, se quedan hasta que los quitas o borras la app.</li></ul></li>
+<li><strong>Caravanas cercanas</strong>: tu entrada se actualiza cada 15–60 segundos.<ul><li>Se borra al desactivarlo o al salir de la caravana.</li><li>Si la app se cierra de golpe, deja de mostrarse a los 2 minutos. Se borra la próxima vez que abres la app o, pasados 10 minutos, cuando otra app de FollowMe mira esa zona.</li></ul></li>
 <li><strong>Identificador anónimo</strong>: se borra automáticamente tras <strong>30 días</strong> sin uso.</li>
 <li><strong>Informes de cierre</strong>: Firebase Crashlytics los conserva hasta 90 días.</li>
+<li><strong>Totales de uso</strong>: son solo sumas por día, sin datos de nadie, y se conservan mientras exista la app.</li>
 </ul>
 <p>La ubicación de los radares viene de OpenStreetMap (© OpenStreetMap contributors, ODbL) y va guardada dentro de la app: no se envía ningún dato para consultarla.</p>
 <h2>Tus derechos</h2>
-<p>Puedes salir de una caravana en cualquier momento, y tu posición deja de compartirse al instante. Para ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación o portabilidad, escribe a <a href="mailto:followmeconvoy@gmail.com.">followmeconvoy@gmail.com.</a> También puedes reclamar ante la autoridad de protección de datos de tu país; en España es la Agencia Española de Protección de Datos (<a href="https://www.aepd.es">aepd.es</a>).</p>
+<p>Puedes salir de una caravana en cualquier momento, y tu posición deja de compartirse al instante. En los ajustes puedes quitar tu foto o desactivar las caravanas cercanas cuando quieras. Para ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación o portabilidad, escribe a <a href="mailto:followmeconvoy@gmail.com.">followmeconvoy@gmail.com.</a> También puedes reclamar ante la autoridad de protección de datos de tu país; en España es la Agencia Española de Protección de Datos (<a href="https://www.aepd.es">aepd.es</a>).</p>
 <h2>Menores</h2>
 <p>FollowMe no está dirigida a menores de 14 años.</p>
 <h2>Cambios</h2>

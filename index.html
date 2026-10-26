@@ -31,7 +31,7 @@ footer { margin-top:48px; color:var(--muted); font-size:13px; }
 <main>
 <header><div class="brand"><div class="logo">🚗</div>FollowMe</div><nav><a href="https://alexrm05.github.io/followme-legal/es/" lang="es">Español</a></nav></header>
 <h1>FollowMe Privacy Policy</h1>
-<p><em>Last updated: October 19, 2026</em></p>
+<p><em>Last updated: October 26, 2026</em></p>
 <p>FollowMe is an app for driving in a convoy: the car in front (the leader) shares the route it takes, and the other cars get directions to follow it. This policy explains what data the app uses and why.</p>
 <h2>Controller</h2>
 <p>Alex Rodríguez Muñoz · <a href="mailto:followmeconvoy@gmail.com">followmeconvoy@gmail.com</a></p>
@@ -39,18 +39,24 @@ footer { margin-top:48px; color:var(--muted); font-size:13px; }
 <div class=table><table><thead><tr><th>Data</th><th>Purpose</th><th>When</th></tr></thead><tbody>
 <tr><td><strong>Precise location</strong> (position, heading, speed)</td><td>Show your car to the members of your convoy, record the leader's route and calculate your directions</td><td>Only while you are in a convoy, including with the screen off (iOS shows a blue indicator and Android a notification)</td></tr>
 <tr><td><strong>The name you choose</strong></td><td>Let the other members know who each car is</td><td>While you are in the convoy</td></tr>
+<tr><td><strong>Profile photo and vehicle icon</strong> (optional; the photo is reduced to an 80 × 80 pixel thumbnail)</td><td>Let the members of your convoy recognise you on the map</td><td>Kept on your phone and, while you are in a convoy, in the convoy too</td></tr>
+<tr><td><strong>Nearby convoys</strong> (optional, off by default): your colour, vehicle icon, position and heading (never your name)</td><td>Let cars of other convoys a few kilometres away see yours, and you see theirs</td><td>Only while it is on in the settings and you are in a convoy</td></tr>
 <tr><td><strong>Anonymous identifier</strong></td><td>Know which car you are within the convoy without asking you for an account</td><td>Created the first time you use the app</td></tr>
 <tr><td><strong>Destination, stops and route</strong> you choose or import (GPX file)</td><td>Guide the convoy there and know who is closest to the destination</td><td>While you are in the convoy; deleted with it</td></tr>
 <tr><td><strong>Quick messages and emergency alerts</strong> you send (with your position, for an emergency)</td><td>Let the members of your convoy know</td><td>While you are in the convoy; deleted with it</td></tr>
-<tr><td><strong>Road reports you send</strong> (type, place, time)</td><td>Warn other drivers about police checks, accidents or hazards ahead</td><td>Only when you send one; they expire after 1–2 hours</td></tr>
+<tr><td><strong>Road reports you send</strong> (type, place, time)</td><td>Warn other drivers about police checks, accidents, hazards or traffic jams ahead</td><td>Only when you send one; they expire after 1–2 hours</td></tr>
+<tr><td><strong>Points for your reports</strong> (which report, and the anonymous identifier of the driver who confirmed it)</td><td>Give you a point each time another driver confirms one of your reports</td><td>When someone confirms one; they last one year</td></tr>
 <tr><td><strong>Crash reports</strong> (what the app was doing when it closed unexpectedly, device model and system version)</td><td>Find and fix bugs</td><td>Only when the app crashes; not linked to your name</td></tr>
+<tr><td><strong>Usage totals</strong> (how many convoys are created, how many times someone joins one and how many reach the destination, per day and per system: iOS or Android)</td><td>Know whether the app is used and improve it</td><td>1 is added to the day's total; nothing about who, where or any identifier is stored</td></tr>
 </tbody></table></div>
 <p>We do not ask for your email, phone number or a password. We do not use your data for advertising or to track you across apps or websites.</p>
 <h2>Who it is shared with</h2>
 <ul>
-<li><strong>The members of your convoy.</strong> They see your name and position. Only people who have the convoy code can join.</li>
+<li><strong>The members of your convoy.</strong> They see your name, your position and, if you added them, your photo and vehicle icon. Only people who have the convoy code can join.</li>
+<li><strong>Drivers of other convoys nearby</strong>, only if you turn on "See and be seen by other convoys nearby" in the settings (it is off by default).<ul><li>People who also have it on and are within the range they choose (2 to 20 km) see your colour, vehicle icon and position on their map.</li><li>They don't see your name, your photo, your convoy or where you are going.</li><li>This data is stored by areas of about 10 km in Firebase, where any FollowMe app can read it.</li></ul></li>
 <li><strong>Google Firebase</strong>, which stores convoy data on servers in the European Union (Belgium, <code>europe-west1</code>), manages the anonymous identifier and receives crash reports (Firebase Crashlytics).</li>
-<li><strong>Other drivers using FollowMe</strong>, only if you send a road report (police check, accident or hazard): they see its type and place for 1–2 hours, never who sent it. Reports are deleted when they expire.</li>
+<li><strong>Other drivers using FollowMe</strong>, only if you send a road report (police check, accident, hazard or traffic jam): they see its type and place for 1–2 hours, never who sent it. Reports are deleted when they expire.</li>
+<li><strong>The DGT (Spain's traffic authority)</strong>, only in Spain: every 5 minutes the app downloads its public list of incidents (traffic jams, accidents, hazards). The request carries neither your position nor who you are; the app then picks the ones near you.</li>
 <li><strong>OpenFreeMap</strong>, which serves the map images. It receives the area of the map you are looking at, not your exact position or who you are.</li>
 <li><strong>openrouteservice</strong> (HeiGIT, Germany), only when you ask for a direct route, to be taken back to the leader's route or to the destination: it receives your position and the points you are heading to, to calculate the route.</li>
 <li><strong>The place search</strong>, only when you search for a destination: Apple's on iPhone; on Android, Photon (komoot, Germany), a free OpenStreetMap search. They receive what you type and your approximate position, to show nearby results first.</li>
@@ -61,12 +67,16 @@ footer { margin-top:48px; color:var(--muted); font-size:13px; }
 <ul>
 <li><strong>Convoy data</strong> (positions, the leader's route, names):<ul><li>Deleted <strong>as soon as the last member leaves</strong>.</li><li>If a convoy is abandoned without being closed, it <strong>expires 24 hours</strong> after it was created and is deleted automatically the next time any user opens the app.</li></ul></li>
 <li><strong>Road reports</strong>: deleted when they expire (1–2 hours after being sent).</li>
+<li><strong>Points for confirmed reports</strong>: each point records which report it was and the anonymous identifier of the driver who confirmed it, never their name or position. Only you see them, and they last <strong>one year</strong>.</li>
+<li><strong>Profile photo and vehicle icon</strong>:<ul><li>In the convoy, deleted with it or as soon as you remove them in the settings.</li><li>On your phone, kept until you remove them or delete the app.</li></ul></li>
+<li><strong>Nearby convoys</strong>: your entry is updated every 15–60 seconds.<ul><li>Deleted when you turn it off or leave the convoy.</li><li>If the app closes unexpectedly, it stops being shown after 2 minutes. It is deleted the next time you open the app or, after 10 minutes, when another FollowMe app looks at that area.</li></ul></li>
 <li><strong>Anonymous identifier</strong>: deleted automatically after <strong>30 days</strong> without use.</li>
 <li><strong>Crash reports</strong>: kept by Firebase Crashlytics for up to 90 days.</li>
+<li><strong>Usage totals</strong>: only daily sums with no one's data, kept for as long as the app exists.</li>
 </ul>
 <p>Speed camera locations come from OpenStreetMap (© OpenStreetMap contributors, ODbL) and are stored in the app itself: no data is sent to look them up.</p>
 <h2>Your rights</h2>
-<p>You can leave a convoy at any time, and your position stops being shared immediately. To exercise your rights of access, rectification, erasure, objection, restriction or portability, write to <a href="mailto:followmeconvoy@gmail.com.">followmeconvoy@gmail.com.</a> You can also lodge a complaint with the data protection authority in your country (in Spain, the Agencia Española de Protección de Datos, <a href="https://www.aepd.es">aepd.es</a>).</p>
+<p>You can leave a convoy at any time, and your position stops being shared immediately. In the settings you can remove your photo or turn off nearby convoys whenever you like. To exercise your rights of access, rectification, erasure, objection, restriction or portability, write to <a href="mailto:followmeconvoy@gmail.com.">followmeconvoy@gmail.com.</a> You can also lodge a complaint with the data protection authority in your country (in Spain, the Agencia Española de Protección de Datos, <a href="https://www.aepd.es">aepd.es</a>).</p>
 <h2>Children</h2>
 <p>FollowMe is not intended for children under 14.</p>
 <h2>Changes</h2>
