@@ -31,7 +31,7 @@ footer { margin-top:48px; color:var(--muted); font-size:13px; }
 <main>
 <header><div class="brand"><div class="logo">🚗</div>FollowMe</div><nav><a href="https://alexrm05.github.io/followme-legal/es/" lang="es">Español</a></nav></header>
 <h1>FollowMe Privacy Policy</h1>
-<p><em>Last updated: October 26, 2026</em></p>
+<p><em>Last updated: November 4, 2026</em></p>
 <p>FollowMe is an app for driving in a convoy: the car in front (the leader) shares the route it takes, and the other cars get directions to follow it. This policy explains what data the app uses and why.</p>
 <h2>Controller</h2>
 <p>Alex Rodríguez Muñoz · <a href="mailto:followmeconvoy@gmail.com">followmeconvoy@gmail.com</a></p>
@@ -54,11 +54,12 @@ footer { margin-top:48px; color:var(--muted); font-size:13px; }
 <ul>
 <li><strong>The members of your convoy.</strong> They see your name, your position and, if you added them, your photo and vehicle icon. Only people who have the convoy code can join.</li>
 <li><strong>Drivers of other convoys nearby</strong>, only if you turn on "See and be seen by other convoys nearby" in the settings (it is off by default).<ul><li>People who also have it on and are within the range they choose (2 to 20 km) see your colour, vehicle icon and position on their map.</li><li>They don't see your name, your photo, your convoy or where you are going.</li><li>This data is stored by areas of about 10 km in Firebase, where any FollowMe app can read it.</li></ul></li>
-<li><strong>Google Firebase</strong>, which stores convoy data on servers in the European Union (Belgium, <code>europe-west1</code>), manages the anonymous identifier and receives crash reports (Firebase Crashlytics).</li>
+<li><strong>Google Firebase</strong>, which stores convoy data on servers in the European Union (Belgium, <code>europe-west1</code>), manages the anonymous identifier, receives crash reports (Firebase Crashlytics) and checks that requests come from the genuine app (Firebase App Check, with Apple App Attest on iPhone and Google Play Integrity on Android; it doesn't receive your position).</li>
 <li><strong>Other drivers using FollowMe</strong>, only if you send a road report (police check, accident, hazard or traffic jam): they see its type and place for 1–2 hours, never who sent it. Reports are deleted when they expire.</li>
 <li><strong>The DGT (Spain's traffic authority)</strong>, only in Spain: every 5 minutes the app downloads its public list of incidents (traffic jams, accidents, hazards). The request carries neither your position nor who you are; the app then picks the ones near you.</li>
 <li><strong>OpenFreeMap</strong>, which serves the map images. It receives the area of the map you are looking at, not your exact position or who you are.</li>
-<li><strong>openrouteservice</strong> (HeiGIT, Germany), only when you ask for a direct route, to be taken back to the leader's route or to the destination: it receives your position and the points you are heading to, to calculate the route.</li>
+<li><strong>Apple Maps</strong> (Apple), on iPhone and CarPlay, when the app calculates a route: to the destination (and the routes to choose from), straight to the leader, back to the leader's route, a new route if you leave it, and the arrival time. It receives your position, the stops and the destination.</li>
+<li><strong>openrouteservice</strong> (HeiGIT, Germany), for the same routes: on Android always; on iPhone only if Apple Maps doesn't answer or to find a route that avoids low emission zones. It receives your position and the points you are heading to, to calculate the route.</li>
 <li><strong>The place search</strong>, only when you search for a destination: Apple's on iPhone; on Android, Photon (komoot, Germany), a free OpenStreetMap search. They receive what you type and your approximate position, to show nearby results first.</li>
 <li><strong>Google</strong>, only if you paste a short Google Maps link (maps.app.goo.gl): the app opens it to read the location inside.</li>
 <li><strong>Your phone's map service</strong> (Apple or Google), to know which country you are in (speed camera warnings are only given where they are legal) and to name a point you pick on the map.</li>
@@ -74,7 +75,7 @@ footer { margin-top:48px; color:var(--muted); font-size:13px; }
 <li><strong>Crash reports</strong>: kept by Firebase Crashlytics for up to 90 days.</li>
 <li><strong>Usage totals</strong>: only daily sums with no one's data, kept for as long as the app exists.</li>
 </ul>
-<p>Speed camera locations come from OpenStreetMap (© OpenStreetMap contributors, ODbL) and are stored in the app itself: no data is sent to look them up.</p>
+<p>Speed cameras, speed limits, lanes, places along the road (petrol stations, tolls, rest areas…) and low emission zones come from OpenStreetMap (© OpenStreetMap contributors, ODbL) and are stored in the app itself: no data is sent to look them up.</p>
 <h2>Your rights</h2>
 <p>You can leave a convoy at any time, and your position stops being shared immediately. In the settings you can remove your photo or turn off nearby convoys whenever you like. To exercise your rights of access, rectification, erasure, objection, restriction or portability, write to <a href="mailto:followmeconvoy@gmail.com.">followmeconvoy@gmail.com.</a> You can also lodge a complaint with the data protection authority in your country (in Spain, the Agencia Española de Protección de Datos, <a href="https://www.aepd.es">aepd.es</a>).</p>
 <h2>Children</h2>
